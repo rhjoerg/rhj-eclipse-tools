@@ -7,7 +7,8 @@ Bundle-Activator: ch.rhj.eclipse.tools.EclipseToolsPlugin
 Bundle-Vendor: Roger H. Jörg
 Require-Bundle: org.eclipse.ui;bundle-version="3.116.0",
  org.eclipse.core.runtime;bundle-version="3.17.100",
- org.eclipse.ui.console;bundle-version="3.9.100"
+ org.eclipse.ui.console;bundle-version="3.9.100",
+ org.eclipse.core.resources;bundle-version="3.13.700"
 Automatic-Module-Name: ch.rhj.eclipse.tools
 Bundle-ActivationPolicy: lazy
 Export-Package: ch.rhj.eclipse.tools;version="0.0.1";uses:="org.osgi.framework,org.eclipse.ui.plugin,ch.rhj.eclipse.tools.console",

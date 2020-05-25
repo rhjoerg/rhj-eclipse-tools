@@ -49,6 +49,16 @@
             </command>
          </toolbar>
       </menuContribution>
+      <menuContribution
+            allPopups="false"
+            locationURI="popup:org.eclipse.ui.popup.any?after=additions">
+         <command
+               commandId="ch.rhj.eclipse.tools.commands.sampleCommand"
+               icon="icons/logo.png"
+               label="Configure..."
+               style="push">
+         </command>
+      </menuContribution>
    </extension>
 
 </plugin>
