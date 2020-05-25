@@ -51,7 +51,7 @@
       </menuContribution>
       <menuContribution
             allPopups="false"
-            locationURI="popup:org.eclipse.ui.popup.any?after=additions">
+            locationURI="popup:org.eclipse.ui.projectConfigure?after=additions">
          <command
                commandId="ch.rhj.eclipse.tools.commands.sampleCommand"
                icon="icons/logo.png"
