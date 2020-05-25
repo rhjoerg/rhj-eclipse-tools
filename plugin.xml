@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.4"?>
+<plugin>
+
+   <extension
+         point="org.eclipse.ui.commands">
+      <category
+            id="ch.rhj.eclipse.tools.commands.category"
+            name="Sample Category">
+      </category>
+      <command
+            categoryId="ch.rhj.eclipse.tools.commands.category"
+            name="Sample Command"
+            id="ch.rhj.eclipse.tools.commands.sampleCommand">
+      </command>
+   </extension>
+   <extension
+         point="org.eclipse.ui.handlers">
+      <handler
+            class="ch.rhj.eclipse.tools.handler.SampleHandler"
+            commandId="ch.rhj.eclipse.tools.commands.sampleCommand">
+      </handler>
+   </extension>
+   <extension
+         point="org.eclipse.ui.bindings">
+      <key
+            commandId="ch.rhj.eclipse.tools.commands.sampleCommand"
+            schemeId="org.eclipse.ui.defaultAcceleratorConfiguration"
+            contextId="org.eclipse.ui.contexts.window"
+            sequence="M1+6">
+      </key>
+   </extension>
+   <extension
+         point="org.eclipse.ui.menus">
+      <menuContribution
+            locationURI="menu:org.eclipse.ui.main.menu?after=additions">
+         <menu
+               id="ch.rhj.eclipse.tools.menus.sampleMenu"
+               label="Sample Menu"
+               mnemonic="M">
+            <command
+                  commandId="ch.rhj.eclipse.tools.commands.sampleCommand"
+                  id="ch.rhj.eclipse.tools.menus.sampleCommand"
+                  mnemonic="S">
+            </command>
+         </menu>
+      </menuContribution>
+      <menuContribution
+            locationURI="toolbar:org.eclipse.ui.main.toolbar?after=additions">
+         <toolbar
+               id="ch.rhj.eclipse.tools.toolbars.sampleToolbar">
+            <command
+                  id="ch.rhj.eclipse.tools.toolbars.sampleCommand"
+                  commandId="ch.rhj.eclipse.tools.commands.sampleCommand"
+                  icon="icons/sample.png"
+                  tooltip="Say hello world">
+            </command>
+         </toolbar>
+      </menuContribution>
+   </extension>
+
+</plugin>
