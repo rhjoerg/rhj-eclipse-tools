@@ -9,3 +9,5 @@ Require-Bundle: org.eclipse.ui,
  org.eclipse.core.runtime
 Automatic-Module-Name: ch.rhj.eclipse.tools
 Bundle-ActivationPolicy: lazy
+Export-Package: ch.rhj.eclipse.tools;version="0.0.1",
+ ch.rhj.eclipse.tools.handler;version="0.0.1"
