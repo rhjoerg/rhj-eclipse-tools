@@ -3,7 +3,7 @@ Bundle-ManifestVersion: 2
 Bundle-Name: RHJ Eclipse Tools
 Bundle-SymbolicName: ch.rhj.eclipse.tools;singleton:=true
 Bundle-Version: 0.0.1.qualifier
-Bundle-Activator: ch.rhj.eclipse.tools.Activator
+Bundle-Activator: ch.rhj.eclipse.tools.EclipseToolsPlugin
 Bundle-Vendor: Roger H. Jörg
 Require-Bundle: org.eclipse.ui;bundle-version="3.116.0",
  org.eclipse.core.runtime;bundle-version="3.17.100",
