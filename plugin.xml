@@ -10,7 +10,7 @@
       </category>
       <command
             categoryId="ch.rhj.eclipse.tools.commands.category"
-            name="Sample Command"
+            name="Hello"
             id="ch.rhj.eclipse.tools.commands.sampleCommand">
       </command>
    </extension>
@@ -22,26 +22,18 @@
       </handler>
    </extension>
    <extension
-         point="org.eclipse.ui.bindings">
-      <key
-            commandId="ch.rhj.eclipse.tools.commands.sampleCommand"
-            schemeId="org.eclipse.ui.defaultAcceleratorConfiguration"
-            contextId="org.eclipse.ui.contexts.window"
-            sequence="M1+6">
-      </key>
-   </extension>
-   <extension
          point="org.eclipse.ui.menus">
       <menuContribution
             locationURI="menu:org.eclipse.ui.main.menu?after=additions">
          <menu
                id="ch.rhj.eclipse.tools.menus.sampleMenu"
-               label="Sample Menu"
-               mnemonic="M">
+               label="RHJ"
+               mnemonic="J">
             <command
                   commandId="ch.rhj.eclipse.tools.commands.sampleCommand"
+                  icon="icons/logo.png"
                   id="ch.rhj.eclipse.tools.menus.sampleCommand"
-                  mnemonic="S">
+                  mnemonic="H">
             </command>
          </menu>
       </menuContribution>
@@ -52,7 +44,7 @@
             <command
                   id="ch.rhj.eclipse.tools.toolbars.sampleCommand"
                   commandId="ch.rhj.eclipse.tools.commands.sampleCommand"
-                  icon="icons/sample.png"
+                  icon="icons/logo.png"
                   tooltip="Say hello world">
             </command>
          </toolbar>
