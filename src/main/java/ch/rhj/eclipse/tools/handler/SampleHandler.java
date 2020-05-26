@@ -1,5 +1,7 @@
 package ch.rhj.eclipse.tools.handler;
 
+import static ch.rhj.eclipse.tools.EclipseToolsConstants.CONSOLE_NAME;
+
 import java.util.stream.Stream;
 
 import org.eclipse.core.commands.AbstractHandler;
@@ -12,28 +14,29 @@ import org.eclipse.core.runtime.IExtensionPoint;
 import org.eclipse.core.runtime.IExtensionRegistry;
 import org.eclipse.core.runtime.Platform;
 
-import ch.rhj.eclipse.tools.console.ConsoleSupport;
+import ch.rhj.eclipse.ui.console.EclipseConsole;
 
-public class SampleHandler extends AbstractHandler implements ConsoleSupport
+public class SampleHandler extends AbstractHandler
 {
+	private final EclipseConsole console = new EclipseConsole(CONSOLE_NAME);
 
 	@Override
 	public Object execute(ExecutionEvent event) throws ExecutionException
 	{
 
-		showConsole();
-		println("Hello, world!");
+		console.show();
+		console.println("Hello, world!");
 
 		IExtensionRegistry extensionRegistry = Platform.getExtensionRegistry();
 		IExtensionPoint[] extensionPoints = extensionRegistry.getExtensionPoints();
 		IExtensionPoint extensionPoint = extensionRegistry.getExtensionPoint("org.eclipse.ui.menus");
 		IExtension[] extensions = extensionPoint.getExtensions();
 
-		println("--- " + extensionPoints.length + " known extensionPoints ---");
+		console.println("--- " + extensionPoints.length + " known extensionPoints ---");
 
-		Stream.of(extensionPoints).map(ep -> ep.getUniqueIdentifier()).sorted().forEach(id -> println(id));
+		Stream.of(extensionPoints).map(ep -> ep.getUniqueIdentifier()).sorted().forEach(id -> console.println(id));
 
-		println("--- " + extensions.length + " menu extensions ---");
+		console.println("--- " + extensions.length + " menu extensions ---");
 
 		for (IExtension extension : extensions)
 		{
