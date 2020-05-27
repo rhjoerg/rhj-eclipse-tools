@@ -12,6 +12,6 @@ Require-Bundle: org.eclipse.ui;bundle-version="3.116.0",
  org.eclipse.ui.ide;bundle-version="3.17.0"
 Automatic-Module-Name: ch.rhj.eclipse.tools
 Export-Package: ch.rhj.eclipse.tools;version="0.0.1";uses:="org.osgi.framework,org.eclipse.ui.plugin",
- ch.rhj.eclipse.tools.handler;version="0.0.1";uses:="org.eclipse.core.commands",
+ ch.rhj.eclipse.tools.configure;version="0.0.1";uses:="org.eclipse.core.commands",
  ch.rhj.eclipse.ui.console;version="0.0.1"
 Bundle-ActivationPolicy: lazy
