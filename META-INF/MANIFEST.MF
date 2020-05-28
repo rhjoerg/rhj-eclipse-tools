@@ -5,13 +5,15 @@ Bundle-SymbolicName: ch.rhj.eclipse.tools;singleton:=true
 Bundle-Version: 0.0.1.qualifier
 Bundle-Activator: ch.rhj.eclipse.tools.EclipseToolsPlugin
 Bundle-Vendor: Roger H. Jörg
-Require-Bundle: org.eclipse.ui;bundle-version="3.116.0",
+Require-Bundle: org.eclipse.core.resources;bundle-version="3.13.700",
  org.eclipse.core.runtime;bundle-version="3.17.100",
+ org.eclipse.jdt.ui;bundle-version="3.21.0",
+ org.eclipse.ui;bundle-version="3.116.0",
  org.eclipse.ui.console;bundle-version="3.9.100",
- org.eclipse.core.resources;bundle-version="3.13.700",
  org.eclipse.ui.ide;bundle-version="3.17.0"
 Automatic-Module-Name: ch.rhj.eclipse.tools
-Export-Package: ch.rhj.eclipse.tools;version="0.0.1";uses:="org.osgi.framework,org.eclipse.ui.plugin",
+Export-Package: ch.rhj.eclipse.core.io;version="0.0.1";uses:="org.osgi.framework,org.eclipse.core.resources",
+ ch.rhj.eclipse.tools;version="0.0.1";uses:="org.osgi.framework,org.eclipse.ui.plugin",
  ch.rhj.eclipse.tools.configure;version="0.0.1";uses:="org.eclipse.core.commands",
  ch.rhj.eclipse.ui.console;version="0.0.1"
 Bundle-ActivationPolicy: lazy

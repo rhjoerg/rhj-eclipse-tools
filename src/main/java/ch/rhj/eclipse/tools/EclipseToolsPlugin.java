@@ -8,6 +8,8 @@ import org.osgi.framework.BundleContext;
  */
 public class EclipseToolsPlugin extends AbstractUIPlugin
 {
+	public final static String PLUGIN_ID = "ch.rhj.eclipse.tools";
+
 	// The shared instance
 	private static EclipseToolsPlugin plugin;
 
