@@ -27,6 +27,7 @@
         <setEntry value="ch.qos.logback.classic@default:default"/>
         <setEntry value="ch.qos.logback.core@default:default"/>
         <setEntry value="ch.qos.logback.slf4j@default:false"/>
+        <setEntry value="com.google.gson*2.8.2.v20180104-1110@default:default"/>
         <setEntry value="com.google.guava*27.1.0.v20190517-1946@default:default"/>
         <setEntry value="com.ibm.icu@default:default"/>
         <setEntry value="javax.activation@default:default"/>
@@ -62,6 +63,7 @@
         <setEntry value="org.eclipse.core.databinding.property@default:default"/>
         <setEntry value="org.eclipse.core.databinding@default:default"/>
         <setEntry value="org.eclipse.core.expressions@default:default"/>
+        <setEntry value="org.eclipse.core.externaltools@default:default"/>
         <setEntry value="org.eclipse.core.filebuffers@default:default"/>
         <setEntry value="org.eclipse.core.filesystem.win32.x86_64@default:false"/>
         <setEntry value="org.eclipse.core.filesystem@default:default"/>
@@ -126,6 +128,7 @@
         <setEntry value="org.eclipse.jdt.compiler.tool@default:false"/>
         <setEntry value="org.eclipse.jdt.core.manipulation@default:default"/>
         <setEntry value="org.eclipse.jdt.core@default:default"/>
+        <setEntry value="org.eclipse.jdt.debug.ui@default:default"/>
         <setEntry value="org.eclipse.jdt.debug@default:default"/>
         <setEntry value="org.eclipse.jdt.launching@default:default"/>
         <setEntry value="org.eclipse.jdt.ui@default:default"/>
@@ -144,11 +147,16 @@
         <setEntry value="org.eclipse.m2e.archetype.common@default:default"/>
         <setEntry value="org.eclipse.m2e.core.ui@default:default"/>
         <setEntry value="org.eclipse.m2e.core@default:default"/>
+        <setEntry value="org.eclipse.m2e.jdt.ui@default:false"/>
+        <setEntry value="org.eclipse.m2e.jdt@default:default"/>
+        <setEntry value="org.eclipse.m2e.launching@default:default"/>
+        <setEntry value="org.eclipse.m2e.lifecyclemapping.defaults@default:default"/>
         <setEntry value="org.eclipse.m2e.logback.appender@default:false"/>
         <setEntry value="org.eclipse.m2e.maven.indexer@default:default"/>
         <setEntry value="org.eclipse.m2e.maven.runtime.slf4j.simple@default:default"/>
         <setEntry value="org.eclipse.m2e.maven.runtime@default:default"/>
         <setEntry value="org.eclipse.m2e.model.edit@default:default"/>
+        <setEntry value="org.eclipse.m2e.sourcelookup@default:default"/>
         <setEntry value="org.eclipse.m2e.workspace.cli@default:default"/>
         <setEntry value="org.eclipse.osgi.compatibility.state@default:false"/>
         <setEntry value="org.eclipse.osgi.services@default:default"/>
@@ -164,6 +172,7 @@
         <setEntry value="org.eclipse.ui.cheatsheets@default:default"/>
         <setEntry value="org.eclipse.ui.console@default:default"/>
         <setEntry value="org.eclipse.ui.editors@default:default"/>
+        <setEntry value="org.eclipse.ui.externaltools@default:default"/>
         <setEntry value="org.eclipse.ui.forms@default:default"/>
         <setEntry value="org.eclipse.ui.genericeditor@default:default"/>
         <setEntry value="org.eclipse.ui.ide.application@default:default"/>

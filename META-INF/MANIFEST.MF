@@ -7,7 +7,12 @@ Bundle-Activator: ch.rhj.eclipse.tools.EclipseToolsPlugin
 Bundle-Vendor: Roger H. Jörg
 Require-Bundle: org.eclipse.core.resources;bundle-version="3.13.700",
  org.eclipse.core.runtime;bundle-version="3.17.100",
+ org.eclipse.jdt.core;bundle-version="3.21.0",
  org.eclipse.jdt.ui;bundle-version="3.21.0",
+ org.eclipse.m2e.core;bundle-version="1.15.0",
+ org.eclipse.m2e.jdt;bundle-version="1.15.0",
+ org.eclipse.m2e.lifecyclemapping.defaults;bundle-version="1.15.0",
+ org.eclipse.m2e.sourcelookup;bundle-version="1.15.0",
  org.eclipse.ui;bundle-version="3.116.0",
  org.eclipse.ui.console;bundle-version="3.9.100",
  org.eclipse.ui.ide;bundle-version="3.17.0"
